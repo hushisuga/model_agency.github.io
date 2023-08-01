@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    box-sizing: border-box;
+  }
+
+
+#main-container{
+    background-image: url(./images/main-image3.jpg);
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+
+
+    width: 100%;
+    height: 180vh;
+}
+
+.navigation-bar ul , .no-dot-list{
+    list-style-type: none;
+}
+.navigation-bar{
+    position: fixed;
+    width: 100%;
+}
+
+.navigation-bar li a:link , .navigation-bar li a:visited {
+    /* color: #D90452; red*/
+    /* color: #F25260;  red diff copy*/
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+}
+.navigation-bar li a:hover{
+    color:  rgb(228, 92, 29);
+}
+.link-hover-white svg:visited , .link-hover-white svg{
+    color: white;
+}
+.link-hover-white svg:hover{
+    color:  rgb(228, 92, 29);
+}
+
+.side-bar{
+    position: fixed;
+    top: 20%;
+    left: 93%;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+.heading-main-page{
+    display: inline;
+    position: relative;
+    top: 15%;
+    left: 10%;
+    width: 50%;
+}
+
+.heading-main-page div{
+    color: white;
+    margin: 1rem;
+}
+
+.heading-main-page div h1{
+    font-size: 7rem;
+    
+    /* color: #F25260; */
+    /* color: rgb(150, 152, 234);  accha lag raha ahi */
+     color: rgb(228, 92, 29); 
+     text-shadow: 0 0 10px black; 
+    
+    font-family: 'Noto Serif Display', serif; 
+}
+
+.heading-main-page div h4{
+    font-size: 3rem;
+    color: rgb(114, 108, 108);
+    letter-spacing: 0.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.heading-main-page .paragraph , .last-part-div p{
+    color: rgb(182, 204, 239);
+}
+
+.heading-main-page div button , .button-orange{
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    background-color: rgb(228, 92, 29);
+    border-color:  rgb(228, 92, 29);
+    border-radius: 5%;
+}
+.button-orange:hover{
+    background-color: transparent;
+    color:  rgb(228, 92, 29);
+}
+.heading-main-page div button:hover{
+    background-color: transparent;
+    color:  rgb(228, 92, 29);
+}
+
+.heading-main-page div button a{
+    color: white;
+    text-decoration: none;
+}
+.heading-main-page div button a:hover{
+    color: rgb(228, 92, 29) ;
+}
+
+/* model styling the bix*/
+.image-container{
+    display: flex;
+    flex-direction: row;
+}
+
+@media(max-width:992px) {
+
+   
+    #main-container{
+        background-image: url(./images/main-image3.jpg);
+        background-repeat: repeat-x;
+        background-attachment: fixed;
+    
+    
+        width: 100%;
+        height: 250vh;
+
+        overflow-x: hidden;
+    }
+
+    .small-text{
+        font-size:1rem;
+    }
+
+    .heading-main-page{
+        display: inline;
+        margin-right: 0px;
+        width: 100%;
+    }
+
+    .heading-main-page div h1{
+        font-size: 4rem;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .heading-main-page div h4{
+        font-size: 2rem;
+    }
+
+    /* .side-bar{
+    position: fixed;
+    top: 20%;
+    left: 93%;
+
+    margin: 0px;
+    padding: 0px;
+     } */
+    .side-bar{
+        visibility: hidden;
+        position: absolute;
+       
+    }
+    .paragraph{
+        width: 80%;
+    }
+    
+
+    .title-head{
+        font-size: 1rem;
+    }
+
+    .navigation-bar li{
+        margin: 10px 0px 10px 0px;
+        padding: 10px 5px 10px 5px;
+        
+    }
+    .navigation-bar{
+        width: 70%;
+    }
+    
+    /* MODEL SECTION*/
+
+    
+   /* ABOUT US */
+   .middle-container.grid-container img{
+    
+    height: 10rem;
+    width: 15rem;
+    margin-left: 50%;
+    margin-right: 40%;
+   }
+   .middle-container.grid-container{
+    display: flex;
+    flex-direction: column;
+   
+   }
+   .aboutus-para{
+    width: 100%;
+   }
+
+
+}
+
+
+/* MODELS*/
+.model-background#main-container{
+    background-image: none;
+    background-color:#161618  ;
+    height: 300vh;
+    width: 100%;
+}
+.model-heading{
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    color:  #e45c1d;
+    font-family: 'Noto Serif Display', serif; 
+   
+}
+.grid-container{
+    position: absolute;
+    top: 40%;
+    left:4%;
+    
+    /* #161618 */
+    background-color:#030526;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px rgb(0, 0, 0);
+}
+
+.color-black{
+    background-color:#1f1f23 ;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px rgb(0, 0, 0);
+}
+
+.grid-container .blank , .grid-container .image-size{
+    height: 350px;
+    width: 280px;
+}
+.grid-container .blank{
+    display: flex;
+    color:rgb(228, 92, 29) ;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.middle-container{
+    position: absolute;
+    top: 40%;
+    left: 4%;
+    right: 4%;
+}
+/* ABOUT US */
+.model-background#main-container.about-us{
+    
+     background-color:#161618 ;
+    
+}
+.aboutus-para{
+    color: white;
+}
+.text-color{
+    color:rgb(228, 92, 29) ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.newsletter-container{
+    background-color: rgb(128, 128, 128);
+}
+new-color-grid{
+    color: white;
+}
+
+/* LINKS OF NEWW MODEL*/
+.row1-item1 a:link, .row1-item3 a:link,.row1-item1 a:visited , .row1-item3 a:visited{
+    color: rgb(228, 92, 29);
+    text-decoration: none;
+}
+.row1-item1 a:hover , .row1-item3 a:hover{
+    color: white ;
+}
+
